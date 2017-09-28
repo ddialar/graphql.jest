@@ -1,0 +1,31 @@
+{
+  "name": "graphql.jest",
+  "version": "1.0.0",
+  "description": "Example code in order to introduce how to implement an integrity test for GraphQL object types definitions.",
+  "scripts": {
+    "test": "jest --watch --verbose"
+  },
+  "keywords": [
+    "Javascript",
+    "GraphQL",
+    "Jest",
+    "Integrity",
+    "Test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddialar/graphql.jest.git"
+  },
+  "author": "Dailos Rafael Díaz Lara <ddialar@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.1.1",
+    "jest": "^20.0.4"
+  },
+  "dependencies": {
+    "graphql": "^0.11.4"
+  }
+}
