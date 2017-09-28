@@ -13,40 +13,40 @@ import {
 
 describe('Testing UserType ...', () => {
     test('Fields integrity.', () => {
-        let roleFields = UserType.getFields();
+        let userFields = UserType.getFields();
 
-        expect(roleFields).toHaveProperty('_id');
-        expect(roleFields._id.type).toMatchObject(graphql.GraphQLID);
-        expect(roleFields).toHaveProperty('username');
-        expect(roleFields.username.type).toMatchObject(graphql.GraphQLString);
-        expect(roleFields).toHaveProperty('password');
-        expect(roleFields.password.type).toMatchObject(graphql.GraphQLString);
-        expect(roleFields).toHaveProperty('token');
-        expect(roleFields.token.type).toMatchObject(graphql.GraphQLString);
-        expect(roleFields).toHaveProperty('role');
-        expect(roleFields.role.type).toMatchObject(graphql.GraphQLInt);
-        expect(roleFields).toHaveProperty('name');
-        expect(roleFields.name.type).toMatchObject(graphql.GraphQLString);
-        expect(roleFields).toHaveProperty('surname');
-        expect(roleFields.surname.type).toMatchObject(graphql.GraphQLString);
-        expect(roleFields).toHaveProperty('phoneNumber');
-        expect(roleFields.phoneNumber.type).toMatchObject(new graphql.GraphQLList(PhoneNumberType.ObjectType));
-        expect(roleFields).toHaveProperty('emailAddress');
-        expect(roleFields.emailAddress.type).toMatchObject(new graphql.GraphQLList(EmailAddressType.ObjectType));
-        expect(roleFields).toHaveProperty('locale');
-        expect(roleFields.locale.type).toMatchObject(graphql.GraphQLString);
-        expect(roleFields).toHaveProperty('isEnabled');
-        expect(roleFields.isEnabled.type).toMatchObject(graphql.GraphQLBoolean);
-        expect(roleFields).toHaveProperty('lastLoginTimestamp');
-        expect(roleFields.lastLoginTimestamp.type).toMatchObject(TimestampType);
-        expect(roleFields).toHaveProperty('createdAt');
-        expect(roleFields.createdAt.type).toMatchObject(TimestampType);
-        expect(roleFields).toHaveProperty('createdBy');
-        expect(roleFields.createdBy.type).toMatchObject(graphql.GraphQLID);
-        expect(roleFields).toHaveProperty('updatedAt');
-        expect(roleFields.updatedAt.type).toMatchObject(TimestampType);
-        expect(roleFields).toHaveProperty('updatedBy');
-        expect(roleFields.updatedBy.type).toMatchObject(graphql.GraphQLID);
+        expect(userFields).toHaveProperty('_id');
+        expect(userFields._id.type).toMatchObject(graphql.GraphQLID);
+        expect(userFields).toHaveProperty('username');
+        expect(userFields.username.type).toMatchObject(graphql.GraphQLString);
+        expect(userFields).toHaveProperty('password');
+        expect(userFields.password.type).toMatchObject(graphql.GraphQLString);
+        expect(userFields).toHaveProperty('token');
+        expect(userFields.token.type).toMatchObject(graphql.GraphQLString);
+        expect(userFields).toHaveProperty('role');
+        expect(userFields.role.type).toMatchObject(graphql.GraphQLInt);
+        expect(userFields).toHaveProperty('name');
+        expect(userFields.name.type).toMatchObject(graphql.GraphQLString);
+        expect(userFields).toHaveProperty('surname');
+        expect(userFields.surname.type).toMatchObject(graphql.GraphQLString);
+        expect(userFields).toHaveProperty('phoneNumber');
+        expect(userFields.phoneNumber.type).toMatchObject(new graphql.GraphQLList(PhoneNumberType.ObjectType));
+        expect(userFields).toHaveProperty('emailAddress');
+        expect(userFields.emailAddress.type).toMatchObject(new graphql.GraphQLList(EmailAddressType.ObjectType));
+        expect(userFields).toHaveProperty('locale');
+        expect(userFields.locale.type).toMatchObject(graphql.GraphQLString);
+        expect(userFields).toHaveProperty('isEnabled');
+        expect(userFields.isEnabled.type).toMatchObject(graphql.GraphQLBoolean);
+        expect(userFields).toHaveProperty('lastLoginTimestamp');
+        expect(userFields.lastLoginTimestamp.type).toMatchObject(TimestampType);
+        expect(userFields).toHaveProperty('createdAt');
+        expect(userFields.createdAt.type).toMatchObject(TimestampType);
+        expect(userFields).toHaveProperty('createdBy');
+        expect(userFields.createdBy.type).toMatchObject(graphql.GraphQLID);
+        expect(userFields).toHaveProperty('updatedAt');
+        expect(userFields.updatedAt.type).toMatchObject(TimestampType);
+        expect(userFields).toHaveProperty('updatedBy');
+        expect(userFields.updatedBy.type).toMatchObject(graphql.GraphQLID);
     });
 
     test('Object-Type level roles.', () => {
